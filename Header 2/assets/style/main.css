@@ -1,0 +1,173 @@
+/** -- FONTS -- */
+@font-face {
+    font-family: Myriad;
+    src: url('../fonts/Myriad Pro Regular.ttf');
+}
+@font-face {
+    font-family: Titillium;
+    src: url('../fonts/TitilliumWeb-Light.ttf');
+}
+
+/** -- MAIN CONTENT -- */
+body {
+    margin: 0;
+    width:100vw;
+    height:100vh;
+    background-color: lightgray;
+    font-family: Titillium;
+}
+h1, h2, h3 {
+    font-family: Myriad;
+}
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100vh;
+    margin-left: 18vw;
+    transition: all 0.3s ease-out;   
+}
+p, h1 {
+    transition: all 1s linear;   
+}
+
+/** -- MENU -- */
+#menu_bar {
+    position: fixed;
+    background-color: #555d67;
+    width: 18vw;
+    height: 100vh;
+    transition: all 0.3s ease-in-out;
+    left: 0vw;    
+}
+#menu_bar ul {
+    list-style-type: none;
+    margin-top: 10vh;
+    margin-left: 1.2vw;
+}
+.menu_top {
+    margin-top: 6vh;
+    width: 9vw;
+    font-weight: bold;
+    font-family: Titillium;
+    color: rgb(231, 230, 230);
+}
+#menu_list li:nth-child(6) {
+    border-bottom: solid 1.5px white;
+    padding-bottom: 6vh;
+}
+.menu_infos {
+    font-size: 11px;
+    color: rgb(231, 230, 230);
+}
+#menu_list li:nth-child(7){
+    margin-top: 5vh;
+}
+#menu_list li:nth-child(8){
+    margin-top: 0px;
+}
+#menu_social {
+    margin-top: 4vh;
+}
+#menu_social i {
+    color: white;
+    padding-right: 1vw;
+}
+
+/** -- UNDERLINE FOR MENU -- */
+.menu-underline {
+    position: relative;
+}
+.menu-underline:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    border-top: solid 2.5px black;
+    left: 0;
+    bottom: -3.5px;
+    border-radius: 25%;
+    transition: width 0.2s ease-in-out;
+}
+.menu-underline:hover:after {
+    position: relative;
+}
+
+/** -- CHECKBOX FOR MENU -- */
+#menu_toggle_div {
+    order: 1;
+    margin-left: 1vw;
+    margin-top: 2vh;
+}
+#menu_toggle {
+    display: none;
+}
+#icon-menu-toggle {
+    font-size: 25px;
+}
+
+/** -- LOGO -- */
+#logo {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 700px;
+    order: 2;
+    margin: auto;
+    padding: 70px 70px;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+}
+#h1_logo {
+    order: 1;
+    margin: 0;
+    font-size: 50px;
+}
+#p2_logo {
+    order: 2;
+    flex-basis: 85px;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    padding-left: 110px;
+    padding-right: 110px;
+    font-size: 28px;
+    color: black;
+}
+
+/** -- BUTTON -- */
+#button_logo {
+    order: 3;
+    margin-top: 0px;
+    text-decoration: none;
+    border: solid 2px #555d67;
+    background-color: #555d67;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 50%;
+    font-family: inherit;
+    padding: 10px;
+    cursor: pointer;
+}
+#button_logo:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+/** -- POINTS MENU -- */
+#points {
+    order: 4;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: lightgrey;
+    border: 1px solid #7d7c7c;
+    border-radius: 100%;
+    margin-right: 20px;
+    margin-bottom: 4px;
+}
+
