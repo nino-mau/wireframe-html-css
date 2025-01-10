@@ -8,6 +8,10 @@
     src: url('../fonts/TitilliumWeb-Light.ttf');
 }
 
+#my{
+    zoom: 100%;
+}
+
 /** -- MAIN CONTENT -- */
 body {
     margin: 0;
@@ -24,8 +28,8 @@ h1, h2, h3 {
     flex-direction: row;
     justify-content: flex-end;
     height: 100vh;
-    margin-left: 18vw;
-    transition: all 0.3s ease-out;   
+    margin-left: 15vw;
+    transition: all 0.3s ease-in-out;   
 }
 p, h1 {
     transition: all 1s linear;   
@@ -34,37 +38,43 @@ p, h1 {
 /** -- MENU -- */
 #menu_bar {
     position: fixed;
-    background-color: #555d67;
-    width: 18vw;
+    background-color: #4f565e;
+    width: 15vw;
     height: 100vh;
     transition: all 0.3s ease-in-out;
     left: 0vw;    
 }
 #menu_bar ul {
     list-style-type: none;
-    margin-top: 10vh;
-    margin-left: 1.2vw;
+    margin-top: 13vh;
+    margin-left: 1vw;
 }
+/** Li elements making up the top section of the menu */
 .menu_top {
-    margin-top: 6vh;
-    width: 9vw;
+    margin-top: 5.5vh;
+    width: 8.6vw;
     font-weight: bold;
+    font-size: 25px;
     font-family: Titillium;
     color: rgb(231, 230, 230);
 }
+/** Border */
 #menu_list li:nth-child(6) {
     border-bottom: solid 1.5px white;
-    padding-bottom: 6vh;
+    padding-bottom: 5.5vh;
 }
 .menu_infos {
-    font-size: 11px;
+    font-size: 15px;
     color: rgb(231, 230, 230);
 }
+/** Li elements containing phone and email */
 #menu_list li:nth-child(7){
-    margin-top: 5vh;
+    margin-top: 5.5vh;
+    font-size: 1.3em;
 }
 #menu_list li:nth-child(8){
-    margin-top: 0px;
+    margin-top: 0vh;
+    font-size: 1.3em;
 }
 #menu_social {
     margin-top: 4vh;
@@ -72,6 +82,7 @@ p, h1 {
 #menu_social i {
     color: white;
     padding-right: 1vw;
+    font-size: 2em;
 }
 
 /** -- UNDERLINE FOR MENU -- */
@@ -96,13 +107,13 @@ p, h1 {
 #menu_toggle_div {
     order: 1;
     margin-left: 1vw;
-    margin-top: 2vh;
+    margin-top: 1.5vh;
 }
 #menu_toggle {
     display: none;
 }
 #icon-menu-toggle {
-    font-size: 25px;
+    font-size: 40px;
 }
 
 /** -- LOGO -- */
@@ -110,10 +121,11 @@ p, h1 {
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-basis: 700px;
+    flex-basis: 1150px;
     order: 2;
     margin: auto;
-    padding: 70px 70px;
+    margin-top: 22vh;
+    padding: 110px 110px;
     text-align: center;
     align-items: center;
     font-size: 20px;
@@ -121,7 +133,7 @@ p, h1 {
 #h1_logo {
     order: 1;
     margin: 0;
-    font-size: 50px;
+    font-size: 70px;
 }
 #p2_logo {
     order: 2;
@@ -129,9 +141,9 @@ p, h1 {
     margin: 0;
     margin-top: 20px;
     margin-bottom: 60px;
-    padding-left: 110px;
-    padding-right: 110px;
-    font-size: 28px;
+    padding-left: 140px;
+    padding-right: 140px;
+    font-size: 50px;
     color: black;
 }
 
