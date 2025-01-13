@@ -30,12 +30,14 @@ body {
     #menu_header1 { 
         display: inline-flex;
         order: 1;
-        padding-right: 15px;
-        gap: 5vw;
+        padding-right: 1vw;
+        gap: 6vw;
         font-weight: bold;
+        margin-top: 1vh; 
     }
     .underline_menu_header1 {
         position: relative;
+        font-size: 1.2em;
     }
     .underline_menu_header1:after {
         content: '';
@@ -43,8 +45,8 @@ body {
         width: 0%;
         border-top: solid 2.5px black;
         left: 0;
-        bottom: -3.5px;
-        border-radius: 25%;
+        bottom: -3px;
+        border-radius: 5%;
         transition: width 0.2s ease-in-out;
     }
     .underline_menu_header1:hover:after {
@@ -54,17 +56,17 @@ body {
     #logo_header1 {
         text-align:center;
         margin-right: auto;
-        padding-left: 1vw;
+        padding-left: 1.5vw;
     }
     .icon-social-vkontakte {
-        font-size:50px;
+        font-size: 4em;
     }
 
     /* TITLE & ARROW */
     #title_header1 {
         order: 2;
         text-align: center;
-        font-size: 25px;
+        font-size: 2.2em;
         padding:30px;
         padding-left: 0px;
         padding-right: 0px;
@@ -75,19 +77,18 @@ body {
     #arrow-left_header1, #arrow-right_header1 {
         display: inline-block;
         text-align: center;
-        font-size: 15px;
+        font-size: 0.5em;
     }
 
     /** DOTS MENU */
     #points_header1 {
         display: inline-flex;
-        flex-direction: column;
         order: 3;
         text-align: center;
         align-items: center;
         padding: 20px;
-        padding-left: 0px;
-        padding-right: 0px;
+        justify-content: center;
+        gap: 0.5vh;
     }
     .dot_header1 {
         height: 10px;
