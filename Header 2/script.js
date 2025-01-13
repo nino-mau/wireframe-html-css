@@ -7,11 +7,11 @@ const main = document.getElementById("content");
 function handleSlidingMenu() {
     if (checkbox.checked === true) {
         menu.style.left = "0vw";
-        main.style.marginLeft = "14vw";
+        main.style.marginLeft = "17vw";
         console.log("Menu shown");
     }
     else {
-        menu.style.left = "-14vw";
+        menu.style.left = "-17vw";
         main.style.marginLeft = "0vw";
         console.log("Menu hidden");
     }

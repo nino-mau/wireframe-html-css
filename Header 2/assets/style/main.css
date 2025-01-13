@@ -1,3 +1,4 @@
+
 /** -- FONTS -- */
 @font-face {
     font-family: Myriad;
@@ -8,9 +9,6 @@
     src: url('../fonts/TitilliumWeb-Light.ttf');
 }
 
-#my{
-    zoom: 100%;
-}
 
 /** -- MAIN CONTENT -- */
 body {
@@ -28,36 +26,59 @@ h1, h2, h3 {
     flex-direction: row;
     justify-content: flex-end;
     height: 100vh;
-    margin-left: 15vw;
+    margin-left: 17vw;
     transition: all 0.3s ease-in-out;   
 }
 p, h1 {
     transition: all 1s linear;   
 }
 
+
 /** -- MENU -- */
 #menu_bar {
     position: fixed;
     background-color: #4f565e;
-    width: 15vw;
+    width: 17vw;
     height: 100vh;
     transition: all 0.3s ease-in-out;
     left: 0vw;    
 }
 #menu_bar ul {
     list-style-type: none;
-    margin-top: 13vh;
+    margin-top: 8vh;
     margin-left: 1vw;
 }
+
+/** Underlines elements for the menu */
+.menu-underline {
+    position: relative;
+}
+.menu-underline:after {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    width: 0%;
+    border-top: solid 2.5px white;
+    left: 0;
+    bottom: -3px;
+    border-radius: 3%;
+    transition: width 0.2s ease-in-out;
+}
+.menu-underline:hover:after {
+    width: 100%;
+}
+
 /** Li elements making up the top section of the menu */
 .menu_top {
-    margin-top: 5.5vh;
-    width: 8.6vw;
+    margin-top: 6vh;
+    display: inline-flex;
+    width: 10vw;
     font-weight: bold;
     font-size: 25px;
     font-family: Titillium;
     color: rgb(231, 230, 230);
 }
+
 /** Border */
 #menu_list li:nth-child(6) {
     border-bottom: solid 1.5px white;
@@ -67,14 +88,15 @@ p, h1 {
     font-size: 15px;
     color: rgb(231, 230, 230);
 }
+
 /** Li elements containing phone and email */
 #menu_list li:nth-child(7){
     margin-top: 5.5vh;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 #menu_list li:nth-child(8){
     margin-top: 0vh;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 #menu_social {
     margin-top: 4vh;
@@ -82,26 +104,9 @@ p, h1 {
 #menu_social i {
     color: white;
     padding-right: 1vw;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
-/** -- UNDERLINE FOR MENU -- */
-.menu-underline {
-    position: relative;
-}
-.menu-underline:after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    border-top: solid 2.5px black;
-    left: 0;
-    bottom: -3.5px;
-    border-radius: 25%;
-    transition: width 0.2s ease-in-out;
-}
-.menu-underline:hover:after {
-    position: relative;
-}
 
 /** -- CHECKBOX FOR MENU -- */
 #menu_toggle_div {
@@ -124,7 +129,7 @@ p, h1 {
     flex-basis: 1150px;
     order: 2;
     margin: auto;
-    margin-top: 22vh;
+    margin-top: 13vh;
     padding: 110px 110px;
     text-align: center;
     align-items: center;
