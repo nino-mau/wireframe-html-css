@@ -17,7 +17,8 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: #cecece;
+    background: rgb(206,206,206);
+    background: linear-gradient(174deg, rgba(206,206,206,1) 0%, rgba(159,159,159,1) 100%);  
 }
 main {
     width: 100vw;
@@ -35,14 +36,14 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-content: flex-end;
+    align-content: flex-start;
     align-items: baseline;
-    gap: 7vw;
-    margin-left: 2.6vw;
-    padding-bottom: -10vh;
+    gap: 6vw;
+    margin-left: 1.2vw;
 }
 /** To adjust margin and padding */
 #menu-title {
+    margin-top: 3.5vh;
     font-size: 4em;
     font-family: Myriad;
 }
@@ -56,7 +57,7 @@ main {
     content: '';
     position: absolute;
     width: 0%;
-    border-top:solid 0.2rem #161616;
+    border-top: solid 0.2rem #161616;
     left: 0;
     bottom: -3px;
     border-radius: 5%;
@@ -73,6 +74,7 @@ main {
     order: 2;
     justify-content: center;
     align-items: center;
+    margin-bottom: 8.5vh;
 }
 #title-content {
     color: black;
@@ -85,18 +87,75 @@ main {
     margin-left: 1vw;
     margin-right: 1vw;
 }
-
+/** related to button */
+.title__button {
+    background: none;
+}
+/** related to popup */
+.title__overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 300ms ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+.title__overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.title__popup {
+    background: #fff;
+    border-radius: 15px;
+    top: 20vh;
+    width: 40%;
+    height: 48%;
+    margin: auto;
+    position: relative;
+    transition: all 300ms ease-in-out;
+}
+.title__popup-description {
+    position: absolute;
+    font-size: 1.3rem;
+    font-family: Titillium;
+    font-weight: bold;
+    margin-top: 0px;
+    left: 0.55vw;
+}
+.title__popup-iframe {
+    position: absolute;
+    border-radius: 3%;
+    border: none;
+    left: 0.4vw;
+    top: 3.5vh;
+    width: 98%;
+    height: 91%;
+}
+.title__popup-close {
+    position: absolute;
+    transition: visibility 100ms;
+    top: 0.6vh;
+    right: 0.5vw;
+}
+#title__popup-close-icon {
+    font-size: 1.1rem;
+    color: #eb6060;
+}
 
 /** -- FOOTER -- */
 #footer {
     display: flex;
     order: 3;
     justify-content: center;
-    margin-bottom: 5vh;
+    margin-bottom: 4vh;
+    margin-right: 1.2vw;
 }
 #arrow-down-icon {
     color: white;
-    font-size: 2rem;
+    font-size: 3.5rem;
 }
 
 
