@@ -1,14 +1,15 @@
 
 /** -- FOR SlICK MENU -- */
 
-// $(document).ready(function(){
-//     // Slick preset
-//     $('.gallery-slick-menu').slick({
-//         infinite: true,
-//         slidesToShow: 3,
-//         slidesToScroll: 3
-//     });
-// });
+$(document).ready(function(){
+    // Slick preset
+    $('.gallery-slick-menu').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+    });
+});
 
 
 /** -- FOR SMOOTH SCROLLING -- */

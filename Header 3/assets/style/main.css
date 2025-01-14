@@ -18,7 +18,7 @@ body {
     background: linear-gradient(180deg, rgba(206,206,206,1) 36%, rgba(231,226,226,1) 60%); 
 }
 h1 {
-    letter-spacing: 0.45rem;
+    letter-spacing: 0.35rem;
     font-family: Myriad;
 }
 
@@ -149,13 +149,14 @@ h1 {
     color: #eb6060;
 }
 
+
 /** -- FOOTER -- */
 .footer-header3 {
     display: flex;
     order: 3;
     justify-content: center;
     margin-bottom: 4vh;
-    margin-right: 1.2vw;
+    margin-right: 0.88vw;
 }
 .footer-header3__anchor-link {
     text-decoration: none;

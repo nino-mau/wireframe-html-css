@@ -10,7 +10,7 @@
 
 /** -- TITLE -- */
 .gallery-title {
-    border: none;
+    padding-top: 7vh;
 }
 .gallery-title h1  {
     text-align: center;
@@ -27,13 +27,21 @@
 /** SLICK MENU */
 .gallery-slick-menu {
     display: block;
+    width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+.gallery-slick-menu .slick-slide {
+    height: 22rem; 
+    margin-right: 10rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 .gallery-slick-menu__image {
     position: relative;
-    width: 15vw;
-    height: 15vh;
     border: solid 1px black;
 }
 .gallery-slick-menu__image img {
-    width: 20%;
+    width: 100%;
+    height: 100%;
 }
