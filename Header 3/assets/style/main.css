@@ -1,27 +1,32 @@
 
-/** -- IMPORTS */
+/** -- IMPORTS -- */
 @import url("gallery.css");
 @import url("fonts.css");
 
 
-/** ---- HEADER 3 ---- */
+/** -- MAIN -- */
 * {
     font-family: Titillium;    
 }
 body {
+    /* background: rgb(206,206,206);
+    background: linear-gradient(180deg, rgba(206,206,206,1) 0%, rgba(175,175,175,1) 42%, rgba(255,255,255,1) 58%);  */
     background: rgb(206,206,206);
-    background: linear-gradient(174deg, rgba(206,206,206,1) 0%, rgba(159,159,159,1) 100%);  
+    background: linear-gradient(180deg, rgba(206,206,206,1) 36%, rgba(231,226,226,1) 60%); 
 }
+h1 {
+    letter-spacing: 0.45rem;
+    font-family: Myriad;
+}
+
+
+/** ---- HEADER 3 ---- */
 .header3 {
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-.header4 {
-    width: 100vw;
-    height: 100vh;
 }
 
 
@@ -113,7 +118,7 @@ body {
     position: relative;
     transition: all 300ms ease-in-out;
 }
-.title__popup-description {
+.title__popup h2 {
     position: absolute;
     font-size: 1.3rem;
     font-family: Titillium;

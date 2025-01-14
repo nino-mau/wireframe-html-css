@@ -1,0 +1,22 @@
+
+
+/** -- GALLERY MAIN -- */
+.gallery-section {
+    width: 100vw;
+    height: 100vh;
+}
+
+/** -- TITLE -- */
+.gallery-title {
+    border: none;
+}
+.gallery-title h1  {
+    text-align: center;
+    font-size: 4.4rem;
+}
+.gallery-title p {
+    text-align: center;
+    font-size: 1.3rem;
+    padding-right: 25vw;
+    padding-left: 25vw;
+}
