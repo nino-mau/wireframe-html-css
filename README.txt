@@ -1,0 +1,1 @@
+made for computer screen (1920x1440)
