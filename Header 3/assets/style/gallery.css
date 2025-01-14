@@ -4,6 +4,8 @@
 .gallery-section {
     width: 100vw;
     height: 100vh;
+    min-height: 0;
+    min-width: 0;
 }
 
 /** -- TITLE -- */
@@ -19,4 +21,16 @@
     font-size: 1.3rem;
     padding-right: 25vw;
     padding-left: 25vw;
+}
+
+
+.test-slick {
+    display: block;
+}
+/** SLICK MENU */
+.gallery-slick-menu {
+    position: relative;
+}
+.gallery-slick-menu__image {
+    width: 20%;
 }
