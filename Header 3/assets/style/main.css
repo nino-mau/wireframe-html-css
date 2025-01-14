@@ -1,31 +1,27 @@
 
-/** -- FONTS -- */
-@font-face {
-    font-family: Myriad;
-    src: url('../fonts/Myriad Pro Regular.ttf');
-}
-@font-face {
-    font-family: Titillium;
-    src: url('../fonts/TitilliumWeb-Light.ttf');
-}
+/** -- IMPORTS */
+@import url("gallery.css");
+@import url("fonts.css");
 
 
-/** -- MAIN CONTENT -- */
+/** ---- HEADER 3 ---- */
 * {
     font-family: Titillium;    
 }
 body {
-    width: 100vw;
-    height: 100vh;
     background: rgb(206,206,206);
     background: linear-gradient(174deg, rgba(206,206,206,1) 0%, rgba(159,159,159,1) 100%);  
 }
-main {
+.header3 {
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.header4 {
+    width: 100vw;
+    height: 100vh;
 }
 
 
