@@ -24,13 +24,16 @@
 }
 
 
-.test-slick {
-    display: block;
-}
 /** SLICK MENU */
 .gallery-slick-menu {
-    position: relative;
+    display: block;
 }
 .gallery-slick-menu__image {
+    position: relative;
+    width: 15vw;
+    height: 15vh;
+    border: solid 1px black;
+}
+.gallery-slick-menu__image img {
     width: 20%;
 }
