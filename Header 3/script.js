@@ -4,10 +4,12 @@
 $(document).ready(function(){
     // Slick preset
     $('.gallery-slick-menu').slick({
+        infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
+        // Custom arrows
         arrows: true,
         prevArrow: '<button class="slick-prev"><i class="icon-arrow-left gallery-slick-menu__arrow-icon"></i></button>',
         nextArrow: '<button class="slick-next"><i class="icon-arrow-right gallery-slick-menu__arrow-icon"></i></button>'
