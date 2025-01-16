@@ -8,6 +8,9 @@ $(document).ready(function(){
         slidesToScroll: 1,
         autoplay: false,
         autoplaySpeed: 2000,
+        arrows: true,
+        prevArrow: '<button class="slick-prev"><i class="fa-solid fa-chevron-left gallery-slick-menu__arrow-icon"></i></button>',
+        nextArrow: '<button class="slick-next"><i class="fa-solid fa-chevron-right gallery-slick-menu__arrow-icon"></i></button>'
     });
 });
 
