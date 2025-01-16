@@ -9,8 +9,8 @@ $(document).ready(function(){
         autoplay: false,
         autoplaySpeed: 2000,
         arrows: true,
-        prevArrow: '<button class="slick-prev"><i class="fa-solid fa-chevron-left gallery-slick-menu__arrow-icon"></i></button>',
-        nextArrow: '<button class="slick-next"><i class="fa-solid fa-chevron-right gallery-slick-menu__arrow-icon"></i></button>'
+        prevArrow: '<button class="slick-prev"><i class="icon-arrow-left gallery-slick-menu__arrow-icon"></i></button>',
+        nextArrow: '<button class="slick-next"><i class="icon-arrow-right gallery-slick-menu__arrow-icon"></i></button>'
     });
 });
 

@@ -29,6 +29,7 @@
     width: 80vw;
     margin-right: auto;
     margin-left: auto;
+    border: solid 1px black;
 }
 .gallery-slick-menu .slick-slide {
     height: 16rem; 
@@ -50,7 +51,7 @@
 }
 .gallery-slick-menu .slick-next {
     top: 38.5%;
-    left: 101.4%;
+    left: 99.5%;
 }   
 .gallery-slick-menu .slick-prev {
     top: 38.5%;
