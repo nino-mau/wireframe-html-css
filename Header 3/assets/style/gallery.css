@@ -50,19 +50,14 @@
 }
 .gallery-slick-menu .slick-next {
     top: 38.5%;
-    left: 92.8%;
+    left: 101.4%;
 }   
 .gallery-slick-menu .slick-prev {
     top: 38.5%;
     left: -6%;
 }
-.gallery-slick-menu .slick-slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .gallery-slick-menu__arrow-icon {
     position: absolute;
-    color: grey;
+    color: #5e5e5d;
     font-size: 5rem;
 }
