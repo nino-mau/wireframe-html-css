@@ -17,6 +17,7 @@
     font-size: 4.4rem;
 }
 .gallery-title p {
+    /* margin-top: 1rem; */
     text-align: center;
     font-size: 1.3rem;
     padding-right: 25vw;
@@ -31,12 +32,12 @@
     margin-left: auto;
 }
 .gallery-slick-menu .slick-slide {
-    height: 16rem; 
+    height: 22rem; 
     /** Can be used to change width of images box */
     margin-right: 4rem;
     margin-left: 4rem; 
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-top: 14rem;
+    margin-bottom: 14rem;
 }
 .gallery-slick-menu .slick-track {
     margin-right: 0;
@@ -48,7 +49,7 @@
                 radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
                 linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat,
                 linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat,
-                radial-gradient(#d2d2d2 0%, #555d67 88%);
+                radial-gradient(#d2d2d2 0%, #3f444b 88%);
     border-radius: 8px;
     padding: 9px;
     box-sizing: border-box;
@@ -62,11 +63,11 @@
     content: '';
 }
 .gallery-slick-menu .slick-next {
-    top: 38.5%;
+    top: 44%;
     left: 99.5%;
 }   
 .gallery-slick-menu .slick-prev {
-    top: 38.5%;
+    top: 44%;
     left: -6%;
 }
 .gallery-slick-menu__arrow-icon {
