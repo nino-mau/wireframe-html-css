@@ -23,6 +23,9 @@ h1 {
     letter-spacing: 0.35rem;
     font-family: Myriad;
 }
+a {
+    text-decoration: none;
+}
 
 
 /** ---- HEADER 3 ---- */
@@ -45,7 +48,7 @@ h1 {
     align-content: flex-start;
     align-items: baseline;
     gap: 5vw;
-    margin-left: 1.2vw;
+    margin-right: 0.8vw;
 }
 /** To adjust margin and padding */
 #menu-title {
