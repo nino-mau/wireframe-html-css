@@ -1,5 +1,4 @@
 
-
 /** -- GALLERY MAIN -- */
 .gallery-section {
     width: 100vw;
@@ -7,6 +6,7 @@
     min-height: 0;
     min-width: 0;
 }
+
 
 /** -- TITLE -- */
 .gallery-title {
@@ -42,9 +42,15 @@
     margin-right: 0;
 }
 .gallery-slick-menu__image {
-    background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 12px) calc(100% - 12px) no-repeat,
-                linear-gradient(90deg, #929292 0%, #313131 100%);
-    padding: 11px;
+    background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 3px, transparent 3px) 0% 0%/8px 8px no-repeat,
+                radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
+                radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
+                radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
+                linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat,
+                linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat,
+                radial-gradient(#d2d2d2 0%, #555d67 88%);
+    border-radius: 8px;
+    padding: 9px;
     box-sizing: border-box;
 }
 .gallery-slick-menu__image img {
@@ -65,6 +71,6 @@
 }
 .gallery-slick-menu__arrow-icon {
     position: absolute;
-    color: #5e5e5d;
+    color: #555d67;
     font-size: 5rem;
 }
